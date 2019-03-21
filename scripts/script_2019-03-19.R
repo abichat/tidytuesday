@@ -89,7 +89,7 @@ p <-
         plot.title = element_text(hjust = 0.5, face = "bold", 
                                   size = 20, lineheight = 0.1),
         plot.caption = element_text(size = 12)) +
-  labs(title = "\nRepartition of annual traffic stops per race in Connecticut\n",
+  labs(title = "\nRepartition of annual traffic stops by race in Connecticut\n",
        caption = "Source: Stanford Open Policing Project\n@_abichat for #TidyTuesday\n")
 
 p + geom_subview(data = df_pie, aes(x = x, y = y, subview = pie, 
