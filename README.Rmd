@@ -1,16 +1,25 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
 # tidytuesday
 
-## 2019-04-09 🎾
+
+## 2019-04-09 🎾 
+
 
 <center>
-
 <img src="plots/plot_2019-04-09.gif" align="center"/>
-
 </center>
-
 ## 2019-03-4-02 🚴🏻
 
 <img src="plots/plot_2019-04-02.png" align="center"/>
