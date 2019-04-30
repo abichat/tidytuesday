@@ -1,7 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# tidytuesday
+<img src="tt_logo.png" align="center"/>
+
+## 2019-04-30 🐦
+
+<img src="plots/plot_2019-04-30.png" align="center"/>
 
 ## 2019-04-23 🎎
 
