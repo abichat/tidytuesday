@@ -1,7 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<img src="tt_logo.png" align="center"/>
+# tidytuesday <a href='https://github.com/rfordatascience/tidytuesday' target='_blank'><img src='tt_hex.png' align="right" height="139" /></a>
+
+## 2019-05-07 👨🏻‍🏫🏫
+
+<img src="plots/plot_2019-05-07.png" align="center"/>
 
 ## 2019-04-30 🐦
 
@@ -19,7 +23,7 @@
 
 </center>
 
-## 2019-04-02 🚴🏻
+## 2019-04-02 🚴
 
 <img src="plots/plot_2019-04-02.png" align="center"/>
 
