@@ -3,6 +3,10 @@
 
 # tidytuesday <a href='https://github.com/rfordatascience/tidytuesday' target='_blank'><img src='tt_hex.png' align="right" height="139" /></a>
 
+## 2019-05-14 👩🏻‍🔬🏆
+
+<img src="plots/plot_2019-05-14.png" align="center"/>
+
 ## 2019-05-07 👨🏻‍🏫🏫
 
 <img src="plots/plot_2019-05-07.png" align="center"/>
