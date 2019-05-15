@@ -65,7 +65,7 @@ ggplot(nobel_counts) +
   geom_line(aes(color = birth_country)) +
   geom_point(data = first_last_nobel, y = 0,
              aes(x = first_prize, y = n_prize, color = birth_country)) +
-  geom_flag(data = first_last_nobel, size = 0.03,
+  geom_flag(data = first_last_nobel, size = 0.03, asp=2,
             aes(x = last_prize, y = n_prize, image = code)) +
   scale_color_manual(values = lacroix_palette("PeachPear", n = 10, type = "continuous")) +
   scale_y_continuous(limits = c(NA, 60)) +
