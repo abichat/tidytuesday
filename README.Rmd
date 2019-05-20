@@ -14,6 +14,12 @@ knitr::opts_chunk$set(
 
 # tidytuesday <a href='https://github.com/rfordatascience/tidytuesday' target='_blank'><img src='tt_hex.png' align="right" height="139" /></a>
 
+
+
+## 2019-05-21 `r emo::ji("put_litter_in_its_place")`
+
+<img src="plots/plot_2019-05-21.png" align="center"/>
+
 ## 2019-05-14 `r emo::ji("woman_scientist_light_skin_tone")``r emo::ji("trophy")`
 
 <img src="plots/plot_2019-05-14.png" align="center"/>
