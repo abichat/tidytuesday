@@ -37,7 +37,8 @@ ggplot(df_best_french_wines) +
   scale_fill_pomological() +
   scale_color_pomological() +
   scale_x_continuous(limits = c(80, 100)) +
-  labs(x = "Score", title = "Best French wines", 
+  expand_limits(y = c(NA, 10.7)) +
+  labs(x = "Score", title = "Best French Wines", 
        caption = "Source: WineEnthusiast\n@_abichat for #TidyTuesday") +
   theme_pomological() +
   theme(text = element_text(family = "Chopin Script", size = 20), 
