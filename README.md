@@ -3,6 +3,10 @@
 
 # tidytuesday <a href='https://github.com/rfordatascience/tidytuesday' target='_blank'><img src='tt_hex.png' align="right" height="139" /></a>
 
+## 2019-06-25 👽 🛸
+
+<a href='scripts/script_2019-06-25.R' target='_blank'><img src="plots/plot_2019-06-25.gif" align="center"/></a>
+
 ## 2019-06-18 🦢 🦆 🐦
 
 <a href='scripts/script_2019-06-18.R' target='_blank'><img src="plots/plot_2019-06-18.png" align="center"/></a>
