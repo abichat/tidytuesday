@@ -6,7 +6,9 @@ library(glue)
 
 #### Data ####
 
-media_franchises <- read_csv("data/data_2019-07-02.csv", col_types = "ccddccc")
+media_franchises <- 
+  read_csv("data/data_2019-07-02.csv", col_types = "ccddccc") %>% 
+  unique()
 
 
 #### Table ####
@@ -19,12 +21,12 @@ df_biggest <-
   mutate(revenue_category = fct_reorder(revenue_category, 
                                         revenue, sum, .desc = TRUE),
          franchise = fct_lump(franchise, n = 15, w = revenue)) %>%
-  filter(franchise != "Other", 
-         revenue > 0.5) %>%
+  filter(franchise != "Other") %>%
   mutate(franchise = str_remove_all(franchise, "^.*/ "), 
          franchise = str_remove_all(franchise, " &.*$"), 
          franchise = glue("{franchise} ({year_created})"),
-         franchise = fct_reorder(franchise, revenue, sum))
+         franchise = fct_reorder(franchise, revenue, sum)) %>% 
+  filter(revenue > 0.5)
 
 
 #### Plot ####
