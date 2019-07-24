@@ -16,7 +16,11 @@ knitr::opts_chunk$set(
 
 
 
-## 2019-06-25 `r emo::ji("movie_camera")``r emo::ji("moneybag")` 
+## 2019-07-23 `r emo::ji("airplane")` `r emo::ji("bird")`
+
+<a href='scripts/script_2019-07-23.R' target='_blank'><img src="plots/plot_2019-07-23.png" align="center"/></a>
+
+## 2019-07-02 `r emo::ji("movie_camera")``r emo::ji("moneybag")` 
 
 <a href='scripts/script_2019-07-02.R' target='_blank'><img src="plots/plot_2019-07-02.png" align="center"/></a>
 
