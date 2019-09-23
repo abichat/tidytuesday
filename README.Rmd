@@ -16,6 +16,10 @@ knitr::opts_chunk$set(
 
 
 
+## 2019-09-24 `r emo::ji("child_light_skin_tone")` `r emo::ji("child_medium_skin_tone")` `r emo::ji("child_dark_skin_tone")`
+
+<a href='scripts/script_2019-09-24.R' target='_blank'><img src="plots/plot_2019-09-24.png" align="center"/></a>
+
 ## 2019-08-20 `r emo::ji("bomb")` `r emo::ji("radioactive")`
 
 <a href='scripts/script_2019-08-20.R' target='_blank'><img src="plots/plot_2019-08-20.png" align="center"/></a>
