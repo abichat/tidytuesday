@@ -23,10 +23,6 @@
 
 <a href='scripts/script_2019-06-25.R' target='_blank'><img src="plots/plot_2019-06-25.gif" align="center"/></a>
 
-## 2019-06-18 🦢 🦆 🐦
-
-<a href='scripts/script_2019-06-18.R' target='_blank'><img src="plots/plot_2019-06-18.png" align="center"/></a>
-
 ## 2019-05-28 🍷
 
 <a href='scripts/script_2019-05-28.R' target='_blank'><img src="plots/plot_2019-05-28.png" align="center"/></a>
