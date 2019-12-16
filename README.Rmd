@@ -15,10 +15,13 @@ knitr::opts_chunk$set(
 # tidytuesday <a href='https://github.com/rfordatascience/tidytuesday' target='_blank'><img src='tt_hex.png' align="right" height="139" /></a>
 
 
+## 2019-12-17 `r emo::ji("dog_face")``r emo::ji("us")` 
+
+<a href='scripts/script_2019-12-17.R' target='_blank'><img src="plots/plot_2019-12-17.png" align="center"/></a>
+
 ## 2019-12-03 `r emo::ji("car")` `r emo::ji("parking")`
 
-<a href='scripts/script_2019-v.R' target='_blank'><img src="plots/plot_2019-12-03.png" align="center"/></a>
-
+<a href='scripts/script_2019-12-03.R' target='_blank'><img src="plots/plot_2019-12-03.png" align="center"/></a>
 
 ## 2019-11-22 `r emo::ji("1234")` `r emo::ji("abcd")` `r emo::ji("capital_abcd")`
 
