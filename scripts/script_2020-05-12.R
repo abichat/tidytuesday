@@ -19,12 +19,18 @@ volcano_sf <-
                                       NA_character_, last_eruption_year),
          last_eruption_year = as.numeric(last_eruption_year)) %>% 
   st_as_sf(coords = c("longitude", "latitude")) %>% 
-  st_set_crs(4326)
+  st_set_crs(4326) %>%
+  st_transform("+proj=eqearth +wktext") 
+
+world_proj <-
+  world %>%
+  st_as_sf() %>%
+  st_transform("+proj=eqearth +wktext") 
 
 world_hex <-
-  world %>% 
+  world_proj %>% 
   st_make_grid(what = "polygons", square = FALSE,
-               n = c(400, 200)) %>%
+               n = c(400, 200)) %>% # soooo long
   st_sf() %>% 
   mutate(id_hex = 1:n()) %>% 
   select(id_hex, geometry)
@@ -46,7 +52,8 @@ world_point <-
   mutate(volcano = case_when(is.na(recent_eruption) ~ "no",
                              recent_eruption ~ "recent",
                              TRUE ~ "old")) %>% 
-  st_centroid() 
+  st_centroid() %>% 
+  st_transform("+proj=eqearth +wktext +lon_0=-105")
 
 
 #### Plots ####
@@ -56,7 +63,7 @@ font <- "Volcanic Dungeon"
 ggplot(world_point) +
   geom_sf(aes(color = volcano), size = 0.01) +
   scale_color_manual(values = c("no" = "#4C453A", "recent" = "#EC5E29", "old" = "#D6FC79")) +
-  annotate(geom = "text", x = 190, y = -100, family = font, size = 3, 
+  annotate(geom = "text", x = 17000000, y = -9500000, family = font, size = 3,
            color = "#E3E2CE", hjust = 1.06, lineheight = 1.7,
            label = "Source: The Smithsonian Institution\n@_abichat for #TidyTuesday ") +
   labs(title = "Volcanoes around the world", 
@@ -67,7 +74,7 @@ ggplot(world_point) +
         plot.title = element_markdown(color = "#E3E2CE", hjust = 0.5, size = 20, family = font),
         plot.subtitle = element_markdown(color = "#E3E2CE", hjust = 0.5, size = 12, family = font),
         panel.grid = element_blank(), 
-        plot.margin = margin(10, -45, 5, -25),
+        plot.margin = margin(10, -25, 5, -25),
         plot.background = element_rect(fill = "black"))
 
-ggsave("plots/plot_2020-05-12.png", width = 29, height = 18.7, units = "cm", dpi = "retina")
+ggsave("plots/plot_2020-05-12.png", width = 29, height = 18.98, units = "cm", dpi = "retina")
